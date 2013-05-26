@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Video";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Video</h2>
+
+<ul class="video-list">
+    <li>
+        <h3>YouTube</h3>
+        @Video.YouTube("http://www.youtube.com/v/aZI_rLKBO8Y", 200, 200)
+    </li>
+    <li>
+        <h3>YouTube New</h3>
+        @Video.YouTubeNew("http://www.youtube.com/embed/aZI_rLKBO8Y", 200, 200)
+    </li>
+    <li>
+        <h3>Toudo</h3>
+        @Video.Tudou("http://www.tudou.com/v/lPLB96pYU1w/", 200, 200)
+    </li>
+    <li>
+        <h3>Yuku</h3>
+        @Video.Youku("http://player.youku.com/player.php/sid/XMzYyMjkwODM2/v.swf", 200, 200)
+    </li>
+    <li>
+        <h3>Vimeo</h3>
+        @Video.Vimeo("http://vimeo.com/9820827", 200, 200)
+    </li>
+</ul>

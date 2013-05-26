@@ -1,0 +1,11 @@
+﻿@using System.Web.Mvc
+
+@helper Script(string scriptFile)
+{
+    <script type="text/javascript" src="@UrlHelper.GenerateContentUrl("~/scripts/" + scriptFile, Context)"></script>    
+}
+
+@helper StyleSheet(string cssFile)
+{
+    <link type="text/css" rel="stylesheet" href="@UrlHelper.GenerateContentUrl("~/content/" + cssFile, Context)" />
+}
